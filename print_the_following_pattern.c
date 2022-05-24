@@ -1,17 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int i, j,N;
-    scanf("%d",&N);
-    for(i=1;i<=N; i++)
+    int i,n,c=0;
+    scanf("%d",&n);
+    sam:
+    for(i=n;i>0;i--)
     {
-        for(j=1;j<=N-i+1; j++)
-        {
-            printf("%d",j);
-        }
-        printf("
-");
+        printf("%d",i);
+        printf(" ");
+        c++;
     }
-
-    return 0;
+printf("
+");
+//printf("%d",c);
+if(c<n*n)
+{
+    goto sam;
+}
+/*else
+{
+    printf("no");
+}*/
+return 0;
 }
