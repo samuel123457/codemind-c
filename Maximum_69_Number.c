@@ -1,12 +1,12 @@
-#include<stdio.h>
 #include<string.h>
+#include<stdio.h>
 int main()
 {
     char s[100];
-    int len;
+    int i,n;
     scanf("%s",s);
-    len=strlen(s);
-    for(int i=0;i<len;i++)
+    n=strlen(s);
+    for(i=0;i<n;i++)
     {
         if(s[i]=='6')
         {
@@ -15,4 +15,5 @@ int main()
         }
     }
     printf("%s",s);
+    return 0;
 }
